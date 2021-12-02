@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+	--laranja: hsl(31, 77%, 52%);
+	--ciano_escuro: hsl(184, 100%, 22%);
+	--ciano_mais_escuro_ainda: hsl(179, 100%, 13%);
+	--branco_claro: #fff
+}
+
+* {
+	margin: 0;
+}
+
+body {
+	height: 100vh;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	height: 100%;
+}
+
+.card {
+}
+
+.card_laranja {
+	background-color: var(--laranja);
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+.card_ciano_escuro {
+	background-color: var(--ciano_escuro);
+}
+
+.card_ciano_muito_escuro {
+	background-color: var(--ciano_mais_escuro_ainda);
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+.title {
+	text-transform: uppercase;
+	font-family: Big Shoulders;
+	color: var(--branco_claro);
+	font-size: 28px;
+
+	margin: 30px 0px;
+}
+
+.description {
+	font-family: Lexend Deca;
+	color: var(--branco_claro);
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+.button {
+	min-width: 150px;
+
+	padding: 24px;
+	margin-top: 30px;
+
+	border-radius: 360px;
+
+	border: none;
+}
+
+.button_text {
+	font-size: 16px;
+	font-family: Lexend Deca;
+}
+
+.buttonText_laranja {
+	color:var(--laranja);
+}
+
+.buttonText_ciano_escuro {
+	color:var(--ciano_escuro);
+}
+
+.buttonText_ciano_mais_escuro_ainda {
+	color:var(--ciano_mais_escuro_ainda);
+}
+
+@media (min-width: 768px) {
+	main {
+		flex-direction: row;
+	}
+}
