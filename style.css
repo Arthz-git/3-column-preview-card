@@ -20,15 +20,29 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-
-	height: 100%;
+	
+	padding: 40px 0px;
 }
 
 .card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+
+	width: 65%;
+
+	padding: 40px;
+}
+
+.car_img {
+	width: 75px;
+
+	margin-bottom: 40px;
 }
 
 .card_laranja {
 	background-color: var(--laranja);
+
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
 }
@@ -39,17 +53,18 @@ main {
 
 .card_ciano_muito_escuro {
 	background-color: var(--ciano_mais_escuro_ainda);
+
 	border-bottom-right-radius: 8px;
 	border-bottom-left-radius: 8px;
 }
 
 .title {
 	text-transform: uppercase;
-	font-family: Big Shoulders;
+	font-family: Big Shoulders Display;
 	color: var(--branco_claro);
-	font-size: 28px;
+	font-size: 40px;
 
-	margin: 30px 0px;
+	margin-bottom: 40px;
 }
 
 .description {
@@ -57,21 +72,34 @@ main {
 	color: var(--branco_claro);
 	font-size: 16px;
 	line-height: 1.6;
+
+	opacity: 0.6;
 }
 
 .button {
-	min-width: 150px;
+	max-width: 175px;
 
-	padding: 24px;
-	margin-top: 30px;
+	padding: 16px 24px;
+	margin-top: 40px;
 
 	border-radius: 360px;
+	border: 1px solid transparent;
+}
 
-	border: none;
+.button:hover {
+	border: 1px solid #fff;
+
+	background-color: transparent;
+
+	color: #fff;
+}
+
+.button:hover .button_text {
+	color: #fff;
 }
 
 .button_text {
-	font-size: 16px;
+	font-size: 18px;
 	font-family: Lexend Deca;
 }
 
@@ -90,5 +118,24 @@ main {
 @media (min-width: 768px) {
 	main {
 		flex-direction: row;
+		height: 100%;
+
+		padding: 0px 100px;
+	}
+
+	.card {
+		height: 500px;
+		min-width: 200px;
+		max-width: 300px;
+	}
+	
+	.card_laranja {
+		border-bottom-left-radius: 8px;
+		border-top-right-radius: 0px;
+	}
+
+	.card_ciano_muito_escuro {
+		border-top-right-radius: 8px;
+		border-bottom-left-radius: 0px;
 	}
 }
